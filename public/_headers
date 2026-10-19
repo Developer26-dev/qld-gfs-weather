@@ -3,6 +3,15 @@
   Access-Control-Expose-Headers: ETag, Cache-Control, Content-Length
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer
+/manifest.json
+  Cache-Control: public, max-age=0, must-revalidate
+/status.json
+  Cache-Control: public, max-age=0, must-revalidate
+/current.json
+  Cache-Control: public, max-age=0, must-revalidate
+/
+  Cache-Control: public, max-age=0, must-revalidate
+/index.html
   Cache-Control: public, max-age=0, must-revalidate
 /runs/*
   Cache-Control: public, max-age=31536000, immutable

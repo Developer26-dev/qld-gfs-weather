@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 from validate import validate
 
 def get(url,headers=None):
-    req=urllib.request.Request(url,headers=headers or {})
+    req=urllib.request.Request(url,headers={'User-Agent':'qld-gfs-weather-verifier/1.0 (+https://github.com/Developer26-dev/qld-gfs-weather)',**(headers or {})})
     try:
         with urllib.request.urlopen(req,timeout=20) as r:
             body=r.read(120001)
@@ -33,7 +33,7 @@ def verify(base,site,wait=0,local=False):
                 code,h,raw=get(base.rstrip('/')+'/'+m['path']);transferred+=len(raw)
                 if code!=200 or len(raw)!=m['bytes'] or hashlib.sha256(raw).hexdigest()!=m['sha256']:raise ValueError('Remote grid hash mismatch')
                 validate(raw)
-                if h.get('Access-Control-Allow-Origin')!='*' or 'immutable' not in h.get('Cache-Control','') or not h.get('ETag'):raise ValueError('Grid cache/CORS contract')
+                if h.get('Access-Control-Allow-Origin')!='*' or h.get('Cache-Control','').strip()!='public, max-age=31536000, immutable' or not h.get('ETag'):raise ValueError('Grid cache/CORS contract')
                 code,_,_=get(base.rstrip('/')+'/'+m['path'],{'If-None-Match':h['ETag']})
                 if code!=304:raise ValueError('ETag conditional retrieval failed')
             return {'verified':True,'attempts':attempts,'bytesReceived':transferred,'runAt':m.get('runAt'),'url':base,'https':u.scheme=='https','localSimulation':local}
