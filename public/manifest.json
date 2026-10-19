@@ -1,5 +1,16 @@
 {
   "schema": 1,
-  "available": false,
-  "reason": "No verified forecast published yet"
+  "available": true,
+  "path": "runs/gfs-2026101900-7b225a48da8bf198.json",
+  "sha256": "7b225a48da8bf1980a744a6aaab7f6c0b1dc7b82e26acd68980ccd0cf095be8f",
+  "bytes": 88852,
+  "validator": "qld-gfs-1",
+  "model": "GFS 0.25\u00b0",
+  "provider": "NOAA/NCEP",
+  "runAt": "2026-10-19T00:00:00Z",
+  "retrievedAt": "2026-10-19T08:01:24Z",
+  "expiresAt": "2026-10-19T18:00:00Z",
+  "firstValid": "2026-10-19T09:00:00Z",
+  "lastValid": "2026-10-26T06:00:00Z",
+  "frames": 61
 }

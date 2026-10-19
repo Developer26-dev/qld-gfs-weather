@@ -5,8 +5,49 @@
       "slot": "2026-10-19T06:00:00Z",
       "job": "39218560545",
       "startedAt": "2026-10-19T07:50:44Z",
-      "status": "reserved"
+      "status": "published",
+      "finishedAt": "2026-10-19T08:01:24Z",
+      "result": {
+        "status": "published",
+        "runAt": "2026-10-19T00:00:00Z",
+        "frames": 61,
+        "firstValid": "2026-10-19T09:00:00Z",
+        "lastValid": "2026-10-26T06:00:00Z",
+        "jsonBytes": 88852,
+        "sha256": "7b225a48da8bf1980a744a6aaab7f6c0b1dc7b82e26acd68980ccd0cf095be8f",
+        "processCpuSeconds": 0.56,
+        "wallSeconds": 638.38,
+        "requestCount": 63,
+        "downloadBytes": 367465
+      }
     }
   ],
-  "history": []
+  "history": [
+    {
+      "schema": 1,
+      "lastAttemptAt": "2026-10-19T07:50:46Z",
+      "finishedAt": "2026-10-19T08:01:24Z",
+      "nextExpectedAttemptAt": "2026-10-19T10:40:00Z",
+      "missedAfter": "2026-10-19T11:40:00Z",
+      "result": {
+        "status": "published",
+        "runAt": "2026-10-19T00:00:00Z",
+        "frames": 61,
+        "firstValid": "2026-10-19T09:00:00Z",
+        "lastValid": "2026-10-26T06:00:00Z",
+        "jsonBytes": 88852,
+        "sha256": "7b225a48da8bf1980a744a6aaab7f6c0b1dc7b82e26acd68980ccd0cf095be8f",
+        "processCpuSeconds": 0.56,
+        "wallSeconds": 638.38,
+        "requestCount": 63,
+        "downloadBytes": 367465
+      },
+      "runAt": "2026-10-19T00:00:00Z",
+      "expiresAt": "2026-10-19T18:00:00Z",
+      "job": "39218560545",
+      "source": "NOAA/NCEP",
+      "validator": "qld-gfs-1",
+      "schedule": "40 4,10,16,22 * * * (UTC)"
+    }
+  ]
 }
