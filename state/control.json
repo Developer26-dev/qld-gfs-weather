@@ -1,1 +1,12 @@
-{"schema":1,"attempts":[],"history":[]}
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "slot": "2026-10-19T06:00:00Z",
+      "job": "39218560545",
+      "startedAt": "2026-10-19T07:50:44Z",
+      "status": "reserved"
+    }
+  ],
+  "history": []
+}
