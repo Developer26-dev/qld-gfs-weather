@@ -15,9 +15,11 @@ def next_due(now):
 def reserve(root,now,job):
     root=Path(root);c=read(root/'state/control.json')
     if c['schema']!=1: raise ValueError('Invalid control state')
-    slot=iso(now.replace(hour=now.hour//6*6,minute=0,second=0,microsecond=0))
+    # Reserve the most recent scheduled opportunity, including delayed/manual runs.
+    # UTC model-cycle boundaries would let a setup run suppress the next scheduled job.
+    slot=iso(next_due(now)-timedelta(hours=6))
     c['attempts']=[a for a in c['attempts'] if parse(a['startedAt'])>now-timedelta(days=32)]
-    if any(a['slot']==slot for a in c['attempts']): return False
+    if any(iso(next_due(parse(a['startedAt']))-timedelta(hours=6))==slot for a in c['attempts']): return False
     c['attempts'].append({'slot':slot,'job':job,'startedAt':iso(now),'status':'reserved'})
     write(root/'state/control.json',c)
     return True

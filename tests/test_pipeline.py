@@ -55,6 +55,12 @@ class PipelineTests(unittest.TestCase):
         now=RUN+timedelta(hours=6);self.assertTrue(p.reserve(self.root,now,'a'))
         self.assertFalse(p.reserve(self.root,now+timedelta(hours=1),'b'))
         self.assertTrue(p.reserve(self.root,now+timedelta(hours=6),'c'))
+    def test_manual_setup_does_not_consume_next_scheduled_opportunity(self):
+        self.assertTrue(p.reserve(self.root,RUN+timedelta(hours=7,minutes=50),'setup'))
+        self.assertFalse(p.reserve(self.root,RUN+timedelta(hours=10,minutes=39),'duplicate'))
+        self.assertTrue(p.reserve(self.root,RUN+timedelta(hours=10,minutes=40),'scheduled'))
+        self.assertFalse(p.reserve(self.root,RUN+timedelta(hours=12,minutes=1),'delayed-duplicate'))
+        self.assertTrue(p.reserve(self.root,RUN+timedelta(hours=16,minutes=40),'next'))
     def test_corrupt_or_incomplete_publication_is_rejected(self):
         self.cycle(RUN+timedelta(hours=6),'1',Source())
         m=p.read(self.root/'public/manifest.json');(self.root/'public'/m['path']).write_text('{}')
