@@ -1,0 +1,8 @@
+/*
+  Access-Control-Allow-Origin: *
+  Access-Control-Expose-Headers: ETag, Cache-Control, Content-Length
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Cache-Control: public, max-age=0, must-revalidate
+/runs/*
+  Cache-Control: public, max-age=31536000, immutable

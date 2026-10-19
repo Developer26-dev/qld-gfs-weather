@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8" /><meta
+    name="viewport"
+    content="width=device-width,initial-scale=1"
+  /><title>Queensland NOAA GFS weather feed</title
+  ><style>
+    body {
+      font: 17px system-ui;
+      background: #082c35;
+      color: #ddf5f4;
+      max-width: 48rem;
+      margin: 3rem auto;
+      padding: 1rem;
+    }
+    h1 {
+      font-size: 1.8rem;
+    }
+    a {
+      color: #8cdddc;
+    }
+    pre {
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+    #health {
+      padding: 1rem;
+      border: 1px solid #83b5ba;
+      border-radius: 12px;
+    }
+  </style>
+  <h1>Queensland NOAA GFS weather feed</h1>
+  <p>
+    Public GFS 0.25° wind and gust data. Optional model comparison, not a marine safety assessment.
+  </p>
+  <p id="health">Checking update status…</p>
+  <p>
+    <a href="manifest.json">Version manifest</a> · <a href="status.json">Refresh status</a> ·
+    <a href="current.json">Current dataset</a>
+  </p>
+  <pre id="details"></pre>
+  <p>
+    NOAA/NCEP source data. 152.5–154°E, 28–26°S. Exact downloaded forecast times only. Run expiry:
+    18 hours. No personal data or application accounts are hosted here.
+  </p>
+  <script>
+    async function check() {
+      try {
+        const r = await fetch('status.json', { cache: 'no-cache', credentials: 'omit' });
+        if (!r.ok) throw Error();
+        const s = await r.json(),
+          now = Date.now();
+        const expired = !s.expiresAt || now > Date.parse(s.expiresAt),
+          missed = s.missedAfter && now > Date.parse(s.missedAfter);
+        document.querySelector('#health').textContent = expired
+          ? 'Forecast unavailable or stale — use primary forecast points.'
+          : missed
+            ? 'Scheduled update overdue — last complete forecast remains within its age limit.'
+            : s.result?.status === 'failed'
+              ? 'Latest refresh failed — last complete forecast remains available.'
+              : 'Latest complete forecast available.';
+        document.querySelector('#details').textContent = JSON.stringify(s, null, 2);
+      } catch {
+        document.querySelector('#health').textContent =
+          'Status unavailable. Use primary forecast points.';
+      }
+    }
+    check();
+    setInterval(check, 60000);
+  </script>
+</html>

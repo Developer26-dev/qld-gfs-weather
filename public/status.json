@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "result": {
+    "status": "not-started"
+  },
+  "nextExpectedAttemptAt": null,
+  "missedAfter": null,
+  "expiresAt": null
+}
