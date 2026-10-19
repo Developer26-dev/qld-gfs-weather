@@ -20,6 +20,12 @@
         "requestCount": 63,
         "downloadBytes": 367465
       }
+    },
+    {
+      "slot": "2026-10-19T16:40:00Z",
+      "job": "39291762534",
+      "startedAt": "2026-10-19T17:10:09Z",
+      "status": "reserved"
     }
   ],
   "history": [
