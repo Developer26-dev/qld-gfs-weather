@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "attempts": [
+    {
+      "job": "39373715926",
+      "slot": "2026-10-20T04:40:00Z",
+      "startedAt": "2026-10-20T05:13:18Z",
+      "status": "reserved",
+      "action": "verify",
+      "publicationReserved": false
+    }
+  ],
+  "pending": null
+}
