@@ -44,9 +44,19 @@
       "job": "39447591996",
       "slot": "2026-10-20T10:40:00Z",
       "startedAt": "2026-10-20T15:21:17Z",
-      "status": "reserved",
+      "status": "unchanged",
       "action": "acquire",
-      "publicationReserved": false
+      "publicationReserved": false,
+      "finishedAt": "2026-10-20T15:21:51Z",
+      "result": {
+        "status": "unchanged",
+        "runAt": "2026-10-20T06:00:00Z",
+        "requestCount": 2,
+        "downloadBytes": 325146,
+        "wallSeconds": 10.47,
+        "attemptCpuSeconds": 0.014
+      },
+      "advanced": false
     }
   ],
   "pending": null,
