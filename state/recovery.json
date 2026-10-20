@@ -5,10 +5,14 @@
       "job": "39373715926",
       "slot": "2026-10-20T04:40:00Z",
       "startedAt": "2026-10-20T05:13:18Z",
-      "status": "reserved",
+      "status": "verified",
       "action": "verify",
-      "publicationReserved": false
+      "publicationReserved": false,
+      "verified": true,
+      "verificationAt": "2026-10-20T05:13:20Z",
+      "finishedAt": "2026-10-20T05:13:20Z"
     }
   ],
-  "pending": null
+  "pending": null,
+  "bootstrapped": true
 }
