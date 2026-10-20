@@ -57,6 +57,14 @@
         "attemptCpuSeconds": 0.014
       },
       "advanced": false
+    },
+    {
+      "job": "39484503451",
+      "slot": "2026-10-20T16:40:00Z",
+      "startedAt": "2026-10-20T19:33:47Z",
+      "status": "reserved",
+      "action": "acquire",
+      "publicationReserved": false
     }
   ],
   "pending": null,
