@@ -2,52 +2,6 @@
   "schema": 1,
   "attempts": [
     {
-      "job": "39407630589",
-      "slot": "2026-10-20T04:40:00Z",
-      "startedAt": "2026-10-20T10:23:52Z",
-      "status": "published",
-      "action": "acquire",
-      "publicationReserved": true,
-      "modelRun": "2026-10-20T06:00:00Z",
-      "modelReservedAt": "2026-10-20T10:24:07Z",
-      "finishedAt": "2026-10-20T10:34:37Z",
-      "result": {
-        "status": "published",
-        "runAt": "2026-10-20T06:00:00Z",
-        "frames": 61,
-        "firstValid": "2026-10-20T12:00:00Z",
-        "lastValid": "2026-10-27T09:00:00Z",
-        "jsonBytes": 89979,
-        "sha256": "963515e417e89451d51fca703b9f97ecf92e38c26440cfef71aa2721a4db557a",
-        "processCpuSeconds": 0.4,
-        "requestCount": 62,
-        "downloadBytes": 254354,
-        "wallSeconds": 629.72,
-        "attemptCpuSeconds": 0.416
-      },
-      "advanced": true,
-      "verified": true,
-      "verificationAt": "2026-10-20T10:35:09Z"
-    },
-    {
-      "job": "39447591996",
-      "slot": "2026-10-20T10:40:00Z",
-      "startedAt": "2026-10-20T15:21:17Z",
-      "status": "unchanged",
-      "action": "acquire",
-      "publicationReserved": false,
-      "finishedAt": "2026-10-20T15:21:51Z",
-      "result": {
-        "status": "unchanged",
-        "runAt": "2026-10-20T06:00:00Z",
-        "requestCount": 2,
-        "downloadBytes": 325146,
-        "wallSeconds": 10.47,
-        "attemptCpuSeconds": 0.014
-      },
-      "advanced": false
-    },
-    {
       "job": "39484503451",
       "slot": "2026-10-20T16:40:00Z",
       "startedAt": "2026-10-20T19:33:47Z",
@@ -242,6 +196,14 @@
       "advanced": true,
       "verified": true,
       "verificationAt": "2026-10-22T05:30:34Z"
+    },
+    {
+      "job": "39806568984",
+      "slot": "2026-10-22T10:40:00Z",
+      "startedAt": "2026-10-22T15:37:33Z",
+      "status": "reserved",
+      "action": "acquire",
+      "publicationReserved": false
     }
   ],
   "pending": null,
