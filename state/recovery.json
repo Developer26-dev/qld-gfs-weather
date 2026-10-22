@@ -229,13 +229,33 @@
       "job": "39867038563",
       "slot": "2026-10-22T22:40:00Z",
       "startedAt": "2026-10-22T22:43:57Z",
-      "status": "reserved",
+      "status": "published",
       "action": "acquire",
-      "publicationReserved": false,
+      "publicationReserved": true,
       "modelRun": "2026-10-22T18:00:00Z",
-      "modelReservedAt": "2026-10-22T22:44:22Z"
+      "modelReservedAt": "2026-10-22T22:44:22Z",
+      "finishedAt": "2026-10-22T22:54:45Z",
+      "result": {
+        "status": "published",
+        "runAt": "2026-10-22T18:00:00Z",
+        "frames": 60,
+        "firstValid": "2026-10-23T00:00:00Z",
+        "lastValid": "2026-10-29T21:00:00Z",
+        "jsonBytes": 88251,
+        "sha256": "aabbb35d233abd0d872b7856c414cc22f40168c8b23cdca4d987f47ce5217e17",
+        "processCpuSeconds": 0.531,
+        "requestCount": 61,
+        "downloadBytes": 296511,
+        "wallSeconds": 623.99,
+        "attemptCpuSeconds": 0.549
+      },
+      "advanced": true
     }
   ],
-  "pending": null,
+  "pending": {
+    "fingerprint": "4246af2555a0cd866ff09eee1b3baff78eba4775768ecdd504e808636a645c82",
+    "expiresAt": "2026-10-23T12:00:00Z",
+    "job": "39867038563"
+  },
   "bootstrapped": true
 }
