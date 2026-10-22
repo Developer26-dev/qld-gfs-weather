@@ -2,17 +2,6 @@
   "schema": 1,
   "attempts": [
     {
-      "job": "39373715926",
-      "slot": "2026-10-20T04:40:00Z",
-      "startedAt": "2026-10-20T05:13:18Z",
-      "status": "verified",
-      "action": "verify",
-      "publicationReserved": false,
-      "verified": true,
-      "verificationAt": "2026-10-20T05:13:20Z",
-      "finishedAt": "2026-10-20T05:13:20Z"
-    },
-    {
       "job": "39407630589",
       "slot": "2026-10-20T04:40:00Z",
       "startedAt": "2026-10-20T10:23:52Z",
@@ -225,6 +214,14 @@
       "advanced": true,
       "verified": true,
       "verificationAt": "2026-10-22T00:21:52Z"
+    },
+    {
+      "job": "39727331213",
+      "slot": "2026-10-22T04:40:00Z",
+      "startedAt": "2026-10-22T05:19:16Z",
+      "status": "reserved",
+      "action": "acquire",
+      "publicationReserved": false
     }
   ],
   "pending": null,
