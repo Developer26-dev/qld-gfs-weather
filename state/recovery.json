@@ -201,15 +201,20 @@
       "job": "40649543105",
       "slot": "2026-10-28T04:40:00Z",
       "startedAt": "2026-10-28T07:21:37Z",
-      "status": "reserved",
+      "status": "interrupted",
       "action": "republish",
-      "publicationReserved": true
+      "publicationReserved": true,
+      "finishedAt": "2026-10-28T14:27:45Z"
+    },
+    {
+      "job": "40706139147",
+      "slot": "2026-10-28T10:40:00Z",
+      "startedAt": "2026-10-28T14:27:45Z",
+      "status": "reserved",
+      "action": "acquire",
+      "publicationReserved": false
     }
   ],
-  "pending": {
-    "fingerprint": "a849510262fa358bc23fb763b3ba7f25dce3fc50afc19c783d9a37148ae0cdd0",
-    "expiresAt": "2026-10-28T12:00:00Z",
-    "job": "40610509636"
-  },
+  "pending": null,
   "bootstrapped": true
 }
