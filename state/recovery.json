@@ -201,12 +201,12 @@
       "job": "40610509636",
       "slot": "2026-10-27T22:40:00Z",
       "startedAt": "2026-10-28T00:42:59Z",
-      "status": "published",
+      "status": "publication-failed",
       "action": "acquire",
       "publicationReserved": true,
       "modelRun": "2026-10-27T18:00:00Z",
       "modelReservedAt": "2026-10-28T00:43:32Z",
-      "finishedAt": "2026-10-28T00:53:54Z",
+      "finishedAt": "2026-10-28T01:03:27Z",
       "result": {
         "status": "published",
         "runAt": "2026-10-27T18:00:00Z",
@@ -221,7 +221,9 @@
         "wallSeconds": 632.62,
         "attemptCpuSeconds": 0.567
       },
-      "advanced": true
+      "advanced": true,
+      "verified": false,
+      "verificationAt": "2026-10-28T01:03:27Z"
     }
   ],
   "pending": {
