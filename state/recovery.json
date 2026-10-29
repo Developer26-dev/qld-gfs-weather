@@ -182,13 +182,28 @@
       "job": "40943545261",
       "slot": "2026-10-29T16:40:00Z",
       "startedAt": "2026-10-29T19:49:40Z",
-      "status": "reserved",
+      "status": "failed",
       "action": "acquire",
-      "publicationReserved": false,
+      "publicationReserved": true,
       "modelRun": "2026-10-29T12:00:00Z",
-      "modelReservedAt": "2026-10-29T19:50:06Z"
+      "modelReservedAt": "2026-10-29T19:50:06Z",
+      "finishedAt": "2026-10-29T19:55:04Z",
+      "result": {
+        "status": "failed",
+        "reason": "NOAA HTTP 0; no immediate retries",
+        "lastGoodPreserved": true,
+        "requestCount": 27,
+        "downloadBytes": 340806,
+        "wallSeconds": 308.47,
+        "attemptCpuSeconds": 0.254
+      },
+      "advanced": false
     }
   ],
-  "pending": null,
+  "pending": {
+    "fingerprint": "1f50804e6d3d666ec55659582078cad33c96ee912dcc34bc4cfd12367e21b1b5",
+    "expiresAt": "2026-10-30T00:00:00Z",
+    "job": "40943545261"
+  },
   "bootstrapped": true
 }
