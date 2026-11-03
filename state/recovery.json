@@ -147,7 +147,9 @@
       "startedAt": "2026-11-03T23:40:13Z",
       "status": "reserved",
       "action": "acquire",
-      "publicationReserved": false
+      "publicationReserved": false,
+      "modelRun": "2026-11-03T18:00:00Z",
+      "modelReservedAt": "2026-11-03T23:40:35Z"
     }
   ],
   "pending": null,
