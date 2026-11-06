@@ -196,6 +196,14 @@
       "advanced": true,
       "verified": true,
       "verificationAt": "2026-11-06T07:32:15Z"
+    },
+    {
+      "job": "42242311631",
+      "slot": "2026-11-06T10:40:00Z",
+      "startedAt": "2026-11-06T15:21:47Z",
+      "status": "reserved",
+      "action": "acquire",
+      "publicationReserved": false
     }
   ],
   "pending": null,
