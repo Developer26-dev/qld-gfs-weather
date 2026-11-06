@@ -1,16 +1,16 @@
 {
   "schema": 1,
   "available": true,
-  "path": "runs/gfs-2026110518-4b94dff84c943b29.json",
-  "sha256": "4b94dff84c943b29c66a142af3b84489dddd2103866420651e538ad851086e04",
-  "bytes": 87752,
+  "path": "runs/gfs-2026110600-f35f44b8eac79dbd.json",
+  "sha256": "f35f44b8eac79dbd81787415761d30ec4e8d016262a9b05289319ba4ac8b2a5a",
+  "bytes": 89199,
   "validator": "qld-gfs-1",
   "model": "GFS 0.25\u00b0",
   "provider": "NOAA/NCEP",
-  "runAt": "2026-11-05T18:00:00Z",
-  "retrievedAt": "2026-11-06T00:43:05Z",
-  "expiresAt": "2026-11-06T12:00:00Z",
-  "firstValid": "2026-11-06T03:00:00Z",
-  "lastValid": "2026-11-13T00:00:00Z",
-  "frames": 60
+  "runAt": "2026-11-06T00:00:00Z",
+  "retrievedAt": "2026-11-06T07:31:43Z",
+  "expiresAt": "2026-11-06T18:00:00Z",
+  "firstValid": "2026-11-06T09:00:00Z",
+  "lastValid": "2026-11-13T06:00:00Z",
+  "frames": 61
 }
