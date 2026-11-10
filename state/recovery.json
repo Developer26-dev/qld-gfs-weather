@@ -2,62 +2,6 @@
   "schema": 1,
   "attempts": [
     {
-      "job": "42407001172",
-      "slot": "2026-11-07T16:40:00Z",
-      "startedAt": "2026-11-07T19:36:05Z",
-      "status": "published",
-      "action": "acquire",
-      "publicationReserved": true,
-      "modelRun": "2026-11-07T12:00:00Z",
-      "modelReservedAt": "2026-11-07T19:36:39Z",
-      "finishedAt": "2026-11-07T19:47:08Z",
-      "result": {
-        "status": "published",
-        "runAt": "2026-11-07T12:00:00Z",
-        "frames": 61,
-        "firstValid": "2026-11-07T20:00:00Z",
-        "lastValid": "2026-11-14T18:00:00Z",
-        "jsonBytes": 89147,
-        "sha256": "522ec746f8e6f96b60041d9d566defb0e0ecb6bdf87bbf41ba18d9853faef27d",
-        "processCpuSeconds": 0.599,
-        "requestCount": 63,
-        "downloadBytes": 368913,
-        "wallSeconds": 639.75,
-        "attemptCpuSeconds": 0.619
-      },
-      "advanced": true,
-      "verified": true,
-      "verificationAt": "2026-11-07T19:47:40Z"
-    },
-    {
-      "job": "42423022415",
-      "slot": "2026-11-07T22:40:00Z",
-      "startedAt": "2026-11-07T22:57:54Z",
-      "status": "published",
-      "action": "acquire",
-      "publicationReserved": true,
-      "modelRun": "2026-11-07T18:00:00Z",
-      "modelReservedAt": "2026-11-07T22:58:12Z",
-      "finishedAt": "2026-11-07T23:08:36Z",
-      "result": {
-        "status": "published",
-        "runAt": "2026-11-07T18:00:00Z",
-        "frames": 60,
-        "firstValid": "2026-11-08T00:00:00Z",
-        "lastValid": "2026-11-14T21:00:00Z",
-        "jsonBytes": 88116,
-        "sha256": "961d0e2a2ebe3473edd0e707026928c746bdc9ef1e6c8f735da159969bf2a392",
-        "processCpuSeconds": 0.523,
-        "requestCount": 61,
-        "downloadBytes": 328638,
-        "wallSeconds": 624.37,
-        "attemptCpuSeconds": 0.541
-      },
-      "advanced": true,
-      "verified": true,
-      "verificationAt": "2026-11-07T23:09:09Z"
-    },
-    {
       "job": "42472673704",
       "slot": "2026-11-08T10:40:00Z",
       "startedAt": "2026-11-08T10:44:20Z",
@@ -196,6 +140,14 @@
       "advanced": true,
       "verified": true,
       "verificationAt": "2026-11-09T19:19:13Z"
+    },
+    {
+      "job": "42742280568",
+      "slot": "2026-11-09T22:40:00Z",
+      "startedAt": "2026-11-10T02:22:22Z",
+      "status": "reserved",
+      "action": "acquire",
+      "publicationReserved": false
     }
   ],
   "pending": null,
