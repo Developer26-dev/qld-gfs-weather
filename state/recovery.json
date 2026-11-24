@@ -137,13 +137,11 @@
         "wallSeconds": 633.87,
         "attemptCpuSeconds": 0.512
       },
-      "advanced": true
+      "advanced": true,
+      "verified": true,
+      "verificationAt": "2026-11-24T02:45:39Z"
     }
   ],
-  "pending": {
-    "fingerprint": "c484ee1d84a338b1e172ae68d6e028d7eaf314b3a60353a391fd93e15c65a5fb",
-    "expiresAt": "2026-11-24T12:00:00Z",
-    "job": "45313252219"
-  },
+  "pending": null,
   "bootstrapped": true
 }
